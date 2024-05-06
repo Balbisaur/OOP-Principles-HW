@@ -21,5 +21,5 @@ class Book(Product):
 
 
 
-my_book = Book("1925", "The Great Gatsby", 47.78, "F. S Fitzgerald")
+my_book = Book("1925", "The Great Gatsby", 47.78, "F. Scott Fitzgerald")
 my_book.display_info()
