@@ -9,9 +9,6 @@ class Product:
         print(f"Name: {self.name}")
         print(f"Price: ${self.price}")
 
-    def set_price(self, new_price):
-        self.price = new_price
-
 
 class Book(Product):
     def __init__(self, product_id, name, price, author):
@@ -22,16 +19,7 @@ class Book(Product):
         super().display_info()
         print(f"Author: {self.author}")
 
-    def set_author(self, new_author):
-        self.author = new_author
-
 
 
 my_book = Book("1925", "The Great Gatsby", 47.78, "F. S Fitzgerald")
-my_book.display_info()
-
-my_book.set_price(29.68)
-my_book.set_author("F. Scott Fitzgerald")
-
-print("New Cover:")
 my_book.display_info()
