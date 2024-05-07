@@ -5,7 +5,7 @@ class Product:
         self.price = price
 
     def display_info(self):
-        print(f"Product ID: {self.product_id}")
+        print(f"Product ID: {self.product_id}") 
         print(f"Name: {self.name}")
         print(f"Price: ${self.price}")
 
@@ -16,7 +16,7 @@ class Book(Product):
         self.author = author
 
     def display_info(self):
-        super().display_info()
+        super().display_info() #I am using the super function to call the display_info to print out the product id, name and the price of the book.
         print(f"Author: {self.author}")
 
 
